@@ -1,20 +1,13 @@
-import { Link, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./pages/NotFound";
+// import HeroSection from './components/HeroSection'
 import "./App.css";
+import NavBar from './components/NavBar';
+
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link>
-      </nav>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    </div>
+    <>
+    <NavBar />
+    {/* <HeroSection / */}
+    </>
   );
 }
 export default App;
