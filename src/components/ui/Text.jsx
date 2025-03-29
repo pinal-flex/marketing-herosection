@@ -1,44 +1,45 @@
 import React from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
-const textVariants = cva(
-  "font-sans transition-colors",
-  {
-    variants: {
-      type: {
-        h1: "text-4xl font-bold",
-        h2: "text-3xl font-semibold",
-        h3: "text-2xl font-medium",
-        p: "text-base font-normal",
-      },
-      color: {
-        primary: "text-primary",
-        secondary: "text-secondary",
-        gray: "text-gray-800",
-      },
-      size: {
-        default: "text-base",
-        sm: "text-sm",
-        lg: "text-lg",
-      },
+const textVariants = cva("text-slate-900 dark:text-slate-50", {
+  variants: {
+    variant: {
+      xs: "text-xs tracking-normal",
+      sm: "text-sm leading-4 tracking-normal",
+      base: "text-base tracking-normal",
+      xl: "text-xl tracking-tight",
+      "3xl": "text-3xl tracking-tightest",
     },
-    defaultVariants: {
-      type: "p",
-      color: "gray",
-      size: "default",
+    weight: {
+      light: "font-light",
+      medium: "font-medium",
+      normal: "font-normal",
+      semibold: "font-semibold",
+      bold: "font-bold",
     },
-  }
-);
+  },
+  defaultVariants: {
+    variant: "sm",
+    weight: "normal",
+  },
+});
 
-export function Text({ type = "p", color, size, className, children, ...props }) {
+export function Text({
+  type = "p",
+  className,
+  variant,
+  children,
+  weight,
+  ...props
+}) {
   const Component = type;
   return (
-    <Component className={cn(textVariants({ type, color, size, className }))} {...props}>
+    <Component
+      className={cn(textVariants({ variant, weight }), className)}
+      {...props}
+    >
       {children}
     </Component>
   );
 }
-
-  
-
