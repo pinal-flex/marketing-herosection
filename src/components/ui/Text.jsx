@@ -2,7 +2,7 @@ import React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "../../lib/utils";
 
-const textVariants = cva("text-slate-900 dark:text-slate-50", {
+const textVariants = cva("", {
   variants: {
     variant: {
       xs: "text-xs tracking-normal",
@@ -43,3 +43,4 @@ export function Text({
     </Component>
   );
 }
+

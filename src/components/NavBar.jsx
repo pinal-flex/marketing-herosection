@@ -32,15 +32,15 @@ export default function NavBar() {
 
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <NavLink key={item.name} href={item.href}>
+            <NavLink key={item.name} href={item.href} className="text-sm/6">
               {item.name}
             </NavLink>
           ))}
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink href="#">
-            Log in<span aria-hidden="true">&rarr;</span>
+          <NavLink href="#" className="text-sm/6">
+            Log in <span aria-hidden="true">&rarr;</span>
           </NavLink>
         </div>
 
@@ -49,7 +49,6 @@ export default function NavBar() {
             variant="hidden"
             type="button"
             size="heroicon"
-            // className="inline-flex items-center justify-center"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>{" "}
@@ -92,7 +91,7 @@ export default function NavBar() {
                   <NavLink
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 hover:bg-gray-50"
                   >
                     {item.name}
                   </NavLink>
@@ -102,7 +101,7 @@ export default function NavBar() {
               <div className="py-6">
                 <NavLink
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 hover:bg-gray-50"
                 >
                   Log in
                 </NavLink>
