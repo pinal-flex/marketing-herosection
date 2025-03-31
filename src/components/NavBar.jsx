@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "./ui/NavLink";
-import Button from "./ui/Button";
+import Button, { buttonVariants } from "./ui/Button";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -29,21 +29,19 @@ export default function NavBar() {
             />
           </a>
         </div>
-
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <NavLink key={item.name} href={item.href} className="text-sm/6">
+            <NavLink key={item.name} href={item.href} size="sm">
               {item.name}
             </NavLink>
           ))}
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink href="#" className="text-sm/6">
+          <NavLink href="#" className={buttonVariants({ variant: "ghost" })}>
             Log in <span aria-hidden="true">&rarr;</span>
           </NavLink>
         </div>
-
         <div className="flex lg:hidden">
           <Button
             variant="hidden"
@@ -91,7 +89,9 @@ export default function NavBar() {
                   <NavLink
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 hover:bg-gray-50"
+                    className="py-2"
+                    variant="hidden"
+                    size="default"
                   >
                     {item.name}
                   </NavLink>
@@ -101,7 +101,9 @@ export default function NavBar() {
               <div className="py-6">
                 <NavLink
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 hover:bg-gray-50"
+                  className="py-2.5"
+                  variant="hidden"
+                  size="default"
                 >
                   Log in
                 </NavLink>

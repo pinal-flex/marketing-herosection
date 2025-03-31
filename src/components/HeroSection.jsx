@@ -1,4 +1,5 @@
-import Button from "./ui/Button";
+import Button, { buttonVariants } from "./ui/Button";
+import NavLink from "./ui/NavLink";
 import { Text } from "./ui/Text";
 
 export default function HeroSection() {
@@ -40,9 +41,9 @@ export default function HeroSection() {
               >
                 Get started
               </Button>
-              <Button type="button" variant="ghost">
+              <NavLink href="#" className={buttonVariants({variant: "ghost"})}>
                 Learn more <span aria-hidden="true">→</span>
-              </Button>
+              </NavLink>
             </div>
           </div>
 
