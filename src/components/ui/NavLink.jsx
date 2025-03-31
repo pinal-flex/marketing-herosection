@@ -13,13 +13,13 @@ export const navlinkVariants = cva("", {
       secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
       ghost: "text-sm/6 text-gray-900 font-semibold",
       link: "text-primary underline-offset-4 hover:underline",
-      hidden: "block text-base/7 hover:bg-gray-50",
+      hidden: "block text-base/7 hover:bg-gray-50 font-semibold text-gray-900",
     },
     size: {
       default: "-mx-3 px-3 rounded-lg",
       sm: "text-sm/6",
       lg: "h-11 rounded-md px-8",
-      heroicon: "-m-2.5 p-2.5 rounded-md",
+      icon: "-m-2.5 p-2.5 rounded-md",
     },
   },
   defaultVariants: {
@@ -27,7 +27,7 @@ export const navlinkVariants = cva("", {
     size: "sm",
   },
 });
- 
+
 export default function NavLink({
   children,
   variant,

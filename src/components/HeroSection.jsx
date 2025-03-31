@@ -23,15 +23,16 @@ export default function HeroSection() {
           <div className="mx-auto max-w-2xl text-center">
             <Text
               type="h1"
-              className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl"
+              className=" sm:text-7xl"
+              variant="5xl"
+              weight="semibold"
             >
               Data to enrich your online business
             </Text>
-            <Text className="text-gray-500 mt-8 text-lg font-medium text-pretty sm:text-xl/8">
+            <Text className="sm:text-xl/8" variant="lg" weight="medium">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </Text>
-
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button
                 type="button"
@@ -41,7 +42,10 @@ export default function HeroSection() {
               >
                 Get started
               </Button>
-              <NavLink href="#" className={buttonVariants({variant: "ghost"})}>
+              <NavLink
+                href="#"
+                className={buttonVariants({ variant: "ghost" })}
+              >
                 Learn more <span aria-hidden="true">→</span>
               </NavLink>
             </div>

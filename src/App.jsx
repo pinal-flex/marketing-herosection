@@ -7,6 +7,7 @@ function App() {
     <div className="bg-white">
       <NavBar />
       <HeroSection />
+      
     </div>
   );
 }
