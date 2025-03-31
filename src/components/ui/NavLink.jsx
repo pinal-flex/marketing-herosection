@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 import { cn } from "../../lib/utils";
 
-export const navlinkVariants = cva("", {
+const navlinkVariants = cva("", {
   variants: {
     variant: {
       default: "font-semibold text-gray-900",
