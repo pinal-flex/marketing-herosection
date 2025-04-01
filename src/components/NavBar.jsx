@@ -15,7 +15,7 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 ">
+    <header className="absolute inset-x-0 top-0 z-50">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-6 lg:px-8"
@@ -31,7 +31,7 @@ export default function NavBar() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <NavLink key={item.name} href={item.href} size="sm">
+            <NavLink key={item.name} href={item.href} className="text-sm/6">
               {item.name}
             </NavLink>
           ))}
@@ -88,9 +88,7 @@ export default function NavBar() {
                   <NavLink
                     key={item.name}
                     href={item.href}
-                    className="py-2"
-                    variant="hidden"
-                    size="default"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base/7 hover:bg-gray-50"
                   >
                     {item.name}
                   </NavLink>
@@ -99,9 +97,7 @@ export default function NavBar() {
               <div className="py-6">
                 <NavLink
                   href="#"
-                  className="py-2.5"
-                  variant="hidden"
-                  size="default"
+                  className="py-2.5 -mx-3 block rounded-lg px-3 text-base/7 hover:bg-gray-50"
                 >
                   Log in
                 </NavLink>

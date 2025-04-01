@@ -23,7 +23,7 @@ export default function HeroSection() {
           <div className="mx-auto max-w-2xl text-center">
             <Text
               type="h1"
-              className=" sm:text-7xl"
+              className="text-balance sm:text-7xl"
               variant="5xl"
               weight="semibold"
             >
@@ -66,7 +66,7 @@ export default function HeroSection() {
       </div>
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        className="absolute inset-x-0 bottom-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
       >
         <div
           style={{
