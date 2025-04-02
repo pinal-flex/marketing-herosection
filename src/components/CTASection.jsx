@@ -1,3 +1,6 @@
+import { buttonVariants } from "./ui/Button";
+import NavLink from "./ui/NavLink";
+
 export default function CTASection() {
   return (
     <div className="bg-white py-32">
@@ -13,9 +16,9 @@ export default function CTASection() {
           cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Quasi
           aperiam sit non sit neque reprehenderit.
         </p>
-        <div>
-          <a href="#">Join our team &rarr;</a>
-        </div>
+        <NavLink href="#" className={buttonVariants({ variant: "primary"})}>
+          Join our team &rarr;
+        </NavLink>
       </div>
     </div>
   );
