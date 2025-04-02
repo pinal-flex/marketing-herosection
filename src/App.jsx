@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import FeatureSection from "./components/FeatureSection";
+import CTASection from "./components/CTASection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <HeroSection />
       </div>
       <FeatureSection />
+      <CTASection />
     </>
   );
 }

@@ -31,6 +31,7 @@ export default function FeatureSection() {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="flex gap-x-8 gap-y-16 sm:gap-y-20 flex-col lg:flex-row">
+
           <div className="w-full lg:w-1/2 px-6 md:px-0 lg:pt-4 lg:pr-4 text-left">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <Text
@@ -69,13 +70,38 @@ export default function FeatureSection() {
           </div>
 
           <div className="w-full lg:w-1/2 sm:px-6 lg:px-0">
-            <div className="bg-indigo-500 overflow-hidden isolate lg:max-w-none">
-              <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2">
-                NotificationSetting.jsx
+            <div className="relative isolate bg-indigo-500 overflow-hidden px-6 pt-8 sm:pt-16 sm:pr-0 sm:max-w-2xl sm:mx-auto sm:rounded-3xl sm:pl-16 lg:mx-0 lg:max-w-none">
+            
+              <div
+                className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-white ring-inset"
+                aria-hidden="true"
+              />
+              <div className="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
+                <div className="overflow-hidden w-screen rounded-tl-xl bg-gray-900 ring-1 ring-white/10">
+                  <div className="flex bg-gray-800/40 ring-1 ring-white/5">
+                    <div className="flex text-gray-400 text-sm/6 font-medium -mb-px">
+                      <div className="bg-white/5 px-4 py-2 text-white border-r border-b border-r-white/10 border-b-white/20">
+                        NotificationSetting.jsx
+                      </div>
+                      <div className="px-4 py-2 border-r border-gray-600/10">
+                        App.jsx
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="px-6 pt-6 pb-14">
+                    <img src="https://placehold.co/600x400" alt="code image" />
+                  </div>
+                </div>
               </div>
-              <div>App.jsx</div>
+              <div
+                className="pointer-events-none absolute inset-0 ring-1 ring-black/10 ring-inset sm:rounded-3xl"
+                aria-hidden="true"
+              />
+
             </div>
           </div>
+
         </div>
       </div>
     </div>
