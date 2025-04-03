@@ -43,7 +43,7 @@ export default function FeatureSection() {
                 Deploy faster
               </Text>
               <Text
-                className="mt-2 text-pretty sm:text-5xl"
+                className="mt-2 text-pretty"
                 variant="4xl"
                 weight="semibold"
               >

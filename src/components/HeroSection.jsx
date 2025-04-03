@@ -29,7 +29,7 @@ export default function HeroSection() {
             >
               Data to enrich your online business
             </Text>
-            <Text className="sm:text-xl/8" variant="lg" weight="medium">
+            <Text className="sm:text-xl/8 mt-8" variant="lg" weight="medium">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </Text>
@@ -38,7 +38,6 @@ export default function HeroSection() {
                 type="button"
                 variant="primary"
                 size="sm"
-                className="font-semibold shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </Button>

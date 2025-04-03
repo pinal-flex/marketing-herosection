@@ -1,24 +1,63 @@
 import { buttonVariants } from "./ui/Button";
 import NavLink from "./ui/NavLink";
+import { Text } from "./ui/Text";
 
 export default function CTASection() {
   return (
     <div className="bg-white py-32">
-      <div className="text-left">
-        <h2>Our people</h2>
-        <p>
-          Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati
-          eos iste. Soluta rerum quidem minus ut molestiae velit error quod.
-          Excepturi quidem expedita molestias quas.
-        </p>
-        <p>
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Quasi
-          aperiam sit non sit neque reprehenderit.
-        </p>
-        <NavLink href="#" className={buttonVariants({ variant: "primary"})}>
-          Join our team &rarr;
-        </NavLink>
+      <div>
+        <div className="lg:w-full lg:max-w-lg lg:pb-8">
+          <Text type="h2" variant="4xl" weight="semibold">
+            Our people
+          </Text>
+          <Text variant="xl" className="mt-6">
+            Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati
+            eos iste. Soluta rerum quidem minus ut molestiae velit error quod.
+            Excepturi quidem expedita molestias quas.
+          </Text>
+          <Text variant="base" className="mt-6 text-gray-600">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat. Quasi aperiam sit non sit neque reprehenderit.
+          </Text>
+          <div className="mt-10 flex">
+            <NavLink
+              href="#"
+              className={buttonVariants({ variant: "primary", size: "sm" })}
+            >
+              Join our team &rarr;
+            </NavLink>
+          </div>
+
+          <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+            <img
+              alt=""
+              src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+              className="aspect-7/5 w-[37rem] bg-gray-50 max-w-none rounded-2xl object-cover"
+            />
+  
+
+            <div className="flex lg:w-[37rem] lg:ml-auto lg:justify-end lg:items-start lg:gap-8">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                className="aspect-4/3 w-[24rem] bg-gray-50 max-w-none flex-none rounded-2xl object-cover"
+              />
+
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
+                className="aspect-7/5 w-[37rem] bg-gray-50 max-w-none flex-none rounded-2xl object-cover"
+              />
+
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                className="aspect-4/3 w-[24rem] bg-gray-50 max-w-none rounded-2xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

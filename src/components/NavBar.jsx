@@ -46,6 +46,7 @@ export default function NavBar() {
             variant="hidden"
             type="button"
             size="icon"
+            className="-m-2.5 inline-flex items-center justify-center"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>{" "}
@@ -74,6 +75,7 @@ export default function NavBar() {
               variant="hidden"
               type="button"
               size="icon"
+              className="-m-2.5 inline-flex items-center justify-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
