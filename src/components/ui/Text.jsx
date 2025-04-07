@@ -9,7 +9,7 @@ const textVariants = cva("", {
       base: "text-base/7",
       lg: "text-lg text-pretty text-gray-500",
       xl: "text-xl/8 text-gray-600",
-      "4xl": "text-4xl tracking-tight text-gray-900 sm:text-5xl",
+      "4xl": "text-4xl tracking-tight text-gray-900",
       "5xl": "text-5xl tracking-tight text-gray-900",
     },
     weight: {

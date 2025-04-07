@@ -3,6 +3,8 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import FeatureSection from "./components/FeatureSection";
 import CTASection from "./components/CTASection";
+import HeaderSection from "./components/HeaderSection";
+import NewsletterSections from "./components/NewsletterSections";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       </div>
       <FeatureSection />
       <CTASection />
+      <HeaderSection />
+      <NewsletterSections />
     </>
   );
 }

@@ -31,7 +31,6 @@ export default function FeatureSection() {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
         <div className="flex gap-x-8 gap-y-16 sm:gap-y-20 flex-col lg:flex-row">
-
           <div className="w-full lg:w-1/2 px-6 md:px-0 lg:pt-4 lg:pr-4 text-left">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
               <Text
@@ -43,7 +42,7 @@ export default function FeatureSection() {
                 Deploy faster
               </Text>
               <Text
-                className="mt-2 text-pretty"
+                className="mt-2 text-pretty sm:text-5xl"
                 variant="4xl"
                 weight="semibold"
               >
@@ -71,7 +70,6 @@ export default function FeatureSection() {
 
           <div className="w-full lg:w-1/2 sm:px-6 lg:px-0">
             <div className="relative isolate bg-indigo-500 overflow-hidden px-6 pt-8 sm:pt-16 sm:pr-0 sm:max-w-2xl sm:mx-auto sm:rounded-3xl sm:pl-16 lg:mx-0 lg:max-w-none">
-            
               <div
                 className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-white ring-inset"
                 aria-hidden="true"
@@ -98,10 +96,8 @@ export default function FeatureSection() {
                 className="pointer-events-none absolute inset-0 ring-1 ring-black/10 ring-inset sm:rounded-3xl"
                 aria-hidden="true"
               />
-
             </div>
           </div>
-
         </div>
       </div>
     </div>
