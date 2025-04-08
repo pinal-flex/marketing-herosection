@@ -18,8 +18,8 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="py-24 sm:py-32 lg:pb-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="py-10 sm:py-12 md:py-14 lg:py-16">
+        <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <Text
               type="h1"
@@ -34,11 +34,7 @@ export default function HeroSection() {
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </Text>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button
-                type="button"
-                variant="primary"
-                size="sm"
-              >
+              <Button type="button" variant="primary" size="sm">
                 Get started
               </Button>
               <NavLink
