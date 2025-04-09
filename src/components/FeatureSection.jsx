@@ -29,7 +29,6 @@ const features = [
 export default function FeatureSection() {
   return (
     <div className="overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:py-16">
-      <div className="mx-auto max-w-7xl">
         <div className="flex gap-x-8 gap-y-16 sm:gap-y-20 flex-col lg:flex-row">
           <div className="w-full lg:w-1/2 md:px-0 lg:pt-4 lg:pr-4 text-left">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
@@ -100,6 +99,5 @@ export default function FeatureSection() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

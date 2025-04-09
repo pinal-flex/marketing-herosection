@@ -29,7 +29,7 @@ export default function NewsletterSections() {
                 required
                 placeholder="Enter your email"
                 autoComplete="email"
-                className="flex-auto min-w-0 rounded-md text-white bg-white/5 px-3.5 py-2 text-base outline-1 outline-white/10 -outline-offset-1 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 placeholder:text-gray-500 sm:text-sm/6"
+                className="w-full rounded-md text-white bg-white/5 px-3.5 py-2 text-base outline-1 outline-white/10 -outline-offset-1 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 placeholder:text-gray-500 sm:text-sm/6"
               />
               <Button
                 variant="primary"

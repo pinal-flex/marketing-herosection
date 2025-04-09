@@ -5,6 +5,13 @@ import FeatureSection from "./components/FeatureSection";
 import CTASection from "./components/CTASection";
 import HeaderSection from "./components/HeaderSection";
 import NewsletterSections from "./components/NewsletterSections";
+import States from "./components/States";
+import Testimonials from "./components/Testimonials";
+import TeamSection from "./components/Teamsection";
+import LogoClouds from "./components/LogoClouds";
+import BlogSection from "./components/BlogSection";
+import Footers from "./components/Footers";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   return (
@@ -17,6 +24,13 @@ function App() {
       <CTASection />
       <HeaderSection />
       <NewsletterSections />
+      <States />
+      <Testimonials />
+      <TeamSection />
+      <LogoClouds />
+      <BlogSection />
+      <Footers />
+      <PricingSection />
     </>
   );
 }

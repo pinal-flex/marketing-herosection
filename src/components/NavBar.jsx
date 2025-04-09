@@ -21,13 +21,13 @@ export default function NavBar() {
         className="flex items-center justify-between p-6"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <NavLink href="#" className="-m-1.5 p-1.5">
             <img
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
               alt="Logo"
               className="h-8 w-auto"
             />
-          </a>
+          </NavLink>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (

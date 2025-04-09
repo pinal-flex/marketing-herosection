@@ -24,7 +24,7 @@ export default function HeaderSection() {
       bg-[url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply)] 
       bg-cover absolute -z-10 size-full object-cover object-right md:object-center inset-0 rounded-xl"
         />
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="px-6 lg:px-8">
           <div className="text-left mx-auto max-w-2xl lg:mx-0">
             <Text
               type="h2"
@@ -80,4 +80,3 @@ export default function HeaderSection() {
     </div>
   );
 }
-

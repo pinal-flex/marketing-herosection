@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <div className="overflow-hidden bg-white lg:flex py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8">
-        <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+        <div className="lg:w-full lg:max-w-lg lg:pb-8 text-left">
           <Text
             type="h2"
             variant="4xl"

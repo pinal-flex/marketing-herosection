@@ -16,7 +16,7 @@ export const buttonVariants = cva("", {
       icon: "p-2.5 rounded-md",
     },
   },
-   
+
   defaultVariants: {
     variant: "default",
     size: "default",
