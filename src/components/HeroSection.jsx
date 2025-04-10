@@ -6,7 +6,6 @@ export default function HeroSection() {
   return (
     <div className="relative isolate pt-14">
       <div
-        aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
       >
         <div
@@ -23,13 +22,17 @@ export default function HeroSection() {
           <div className="mx-auto max-w-2xl text-center">
             <Text
               type="h1"
-              className="text-balance sm:text-7xl"
+              className="text-balance text-gray-900 sm:text-7xl"
               variant="5xl"
               weight="semibold"
             >
               Data to enrich your online business
             </Text>
-            <Text className="sm:text-xl/8 mt-8" variant="lg" weight="medium">
+            <Text
+              className="sm:text-xl/8 mt-8 text-gray-500"
+              variant="lg"
+              weight="medium"
+            >
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
             </Text>

@@ -3,6 +3,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "./ui/NavLink";
 import Button, { buttonVariants } from "./ui/Button";
+import { cn } from "../lib/utils";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -16,31 +17,28 @@ export default function NavBar() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav
-        aria-label="Global"
-        className="flex items-center justify-between p-6"
-      >
-        <div className="flex lg:flex-1">
-          <NavLink href="#" className="-m-1.5 p-1.5">
-            <img
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-              alt="Logo"
-              className="h-8 w-auto"
-            />
-          </NavLink>
-        </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+      <nav className="flex items-center justify-between p-6">
+        <NavLink href="#" className="-m-1.5 p-1.5 flex lg:flex-1">
+          <img
+            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+            alt="Logo"
+            className="h-8 w-auto"
+          />
+        </NavLink>
+        <ul className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <NavLink key={item.name} href={item.href} className="text-sm/6">
               {item.name}
             </NavLink>
           ))}
-        </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink href="#" className={buttonVariants({ variant: "ghost" })}>
-            Log in <span aria-hidden="true">&rarr;</span>
-          </NavLink>
-        </div>
+        </ul>
+        <NavLink
+          href="#"
+          className={cn(buttonVariants({ variant: "ghost" }), "hidden lg:flex lg:flex-1 lg:justify-end")}
+       
+        >
+          Log in &rarr;
+        </NavLink>
         <div className="flex lg:hidden">
           <Button
             variant="hidden"
@@ -49,7 +47,6 @@ export default function NavBar() {
             className="-m-2.5 inline-flex items-center justify-center"
             onClick={() => setMobileMenuOpen(true)}
           >
-            <span className="sr-only">Open main menu</span>{" "}
             <Bars3Icon className="size-6" />
           </Button>
         </div>
@@ -60,11 +57,10 @@ export default function NavBar() {
         onClose={() => setMobileMenuOpen(false)}
         className="lg:hidden"
       >
-        <div className="fixed inset-0 z-50" />
+       
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
               <img
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                 alt="Logo"
@@ -78,7 +74,6 @@ export default function NavBar() {
               className="-m-2.5 inline-flex items-center justify-center"
               onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </Button>
           </div>

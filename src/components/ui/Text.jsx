@@ -7,11 +7,11 @@ export const textVariants = cva("", {
     variant: {
       sm: "text-sm/4 tracking-normal",
       base: "text-base/7",
-      lg: "text-lg text-pretty text-gray-500",
-      xl: "text-xl/8 tracking-tight text-gray-600",
+      lg: "text-lg text-pretty",
+      xl: "text-xl/8 tracking-tight",
       "3xl": "text-3xl tracking-tight",
-      "4xl": "text-4xl tracking-tight text-gray-900",
-      "5xl": "text-5xl tracking-tight text-gray-900",
+      "4xl": "text-4xl tracking-tight",
+      "5xl": "text-5xl tracking-tight",
     },
     weight: {
       medium: "font-medium",

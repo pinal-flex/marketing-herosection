@@ -16,10 +16,8 @@ import PricingSection from "./components/PricingSection";
 function App() {
   return (
     <>
-      <div className="bg-white">
-        <NavBar />
-        <HeroSection />
-      </div>
+      <NavBar />
+      <HeroSection />
       <FeatureSection />
       <CTASection />
       <HeaderSection />

@@ -11,11 +11,11 @@ export default function CTASection() {
             type="h2"
             variant="4xl"
             weight="semibold"
-            className="sm:text-5xl"
+            className="sm:text-5xl text-gray-900"
           >
             Our people
           </Text>
-          <Text variant="xl" className="mt-6">
+          <Text variant="xl" className="mt-6 text-gray-600">
             Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati
             eos iste. Soluta rerum quidem minus ut molestiae velit error quod.
             Excepturi quidem expedita molestias quas.

@@ -1,3 +1,4 @@
+import { cn } from "../lib/utils";
 import NavLink from "./ui/NavLink";
 import { Text } from "./ui/Text";
 import { textVariants } from "./ui/Text";
@@ -83,13 +84,14 @@ export default function BlogSection() {
             <div className="text-left">
               <NavLink
                 href="#"
-                className={textVariants({
-                  variant: "lg",
-                  type: "h3",
-                  weight: "semibold",
-                  className:
-                    "mt-3 leading-6 text-gray-900 group-hover:text-gray-600 block",
-                })}
+                className={cn(
+                  textVariants({
+                    variant: "lg",
+                    type: "h3",
+                    weight: "semibold",
+                  }),
+                  "mt-3 leading-6 text-gray-900 group-hover:text-gray-600 block"
+                )}
               >
                 {post.title}
               </NavLink>
