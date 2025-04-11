@@ -87,7 +87,6 @@ export default function LogoClouds() {
               height={image.height}
             />
           ))}
-          <img />
         </div>
       </div>
     </div>

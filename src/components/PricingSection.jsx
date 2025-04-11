@@ -3,10 +3,7 @@ import { Text } from "./ui/Text";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import NavLink from "./ui/NavLink";
 import { buttonVariants } from "./ui/Button";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { cn } from "../lib/utils";
 
 const tiers = [
   {
@@ -88,19 +85,19 @@ export default function PricingSection() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <RadioGroup className="flex flex-row bg-white/5 text-white text-center p-1 rounded-full gap-x-1 text-xs/5 font-semibold">
-            <Radio className="rounded-full px-2.5 py-1 bg-indigo-500">
+          <div className="flex flex-row bg-white/5 text-white text-center p-1 rounded-full gap-x-1 text-xs/5 font-semibold">
+            <div className="rounded-full px-2.5 py-1 bg-indigo-500">
               Monthly
-            </Radio>
-            <Radio className="rounded-full px-2.5 py-1">Annually</Radio>
-          </RadioGroup>
+            </div>
+            <div className="rounded-full px-2.5 py-1">Annually</div>
+          </div>
         </div>
 
         <div className="flex flex-col mx-auto max-w-md isolate mt-10 gap-8 lg:flex-row lg:max-w-none lg:mx-0">
           {tiers.map((tier) => (
             <div key={tier.id}>
               <div
-                className={classNames(
+                className={cn(
                   tier.mostPopular
                     ? "bg-white/5 ring-2 ring-indigo-500"
                     : "ring-1 ring-white/10",
@@ -140,7 +137,7 @@ export default function PricingSection() {
 
                 <NavLink
                   href={tier.href}
-                  className={classNames(
+                  className={cn(
                     tier.mostPopular
                       ? buttonVariants({ variant: "primary" })
                       : "bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white",
